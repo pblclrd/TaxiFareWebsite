@@ -19,12 +19,15 @@ Hello, welcome to the Taxi Fare prediction!
 
 '''
 
-pickup_datetime = st.text_input('What date and what time?')
-pickup_longitude = st.number_input('What is your pickup longitude?')
-pickup_latitude = st.number_input('What is your pickup latitude?')
-dropoff_longitude = st.number_input('What is your dropoff longitude?')
-dropoff_latitude = st.number_input('What is your dropoff latitude?')
-passenger_count = st.number_input('What is your passenger count')
+pickup_datetime = st.text_input('What date and what time?',
+                                value='2021-05-21 11:13:00')
+pickup_longitude = st.number_input('What is your pickup longitude?',
+                                   value = "1")
+pickup_latitude = st.number_input('What is your pickup latitude?', value="1")
+dropoff_longitude = st.number_input('What is your dropoff longitude?',
+                                    value="2")
+dropoff_latitude = st.number_input('What is your dropoff latitude?', value="2")
+passenger_count = st.number_input('What is your passenger count', value="1")
 
 url = 'https://taxifare.lewagon.ai/predict'
 
